@@ -32,7 +32,16 @@ public class SVGParser {
                             el.getAttribute("fill")
                     ));
                     break;
-                // add "line" if needed
+                case "line":
+                    shapes.add(new Line(
+                            Integer.parseInt(el.getAttribute("x1")),
+                            Integer.parseInt(el.getAttribute("y1")),
+                            Integer.parseInt(el.getAttribute("x2")),
+                            Integer.parseInt(el.getAttribute("y2")),
+                            el.getAttribute("stroke")
+                    ));
+                    break;
+
             }
         }
         return shapes;
