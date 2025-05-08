@@ -28,9 +28,22 @@ public class Main {
                     case "within": editor.within(tokens); break;
                     case "save": editor.save(); break;
                     case "saveas": editor.saveAs(tokens[1]); break;
+                    case "help":
+                        System.out.println("Available commands:");
+                        System.out.println("  open <filename>");
+                        System.out.println("  print");
+                        System.out.println("  create <shape> <params>");
+                        System.out.println("  erase <index>");
+                        System.out.println("  translate <index> horizontal=<dx> vertical=<dy>");
+                        System.out.println("  within <shape> <params>");
+                        System.out.println("  save");
+                        System.out.println("  saveas <filename>");
+                        System.out.println("  exit");
+                        break;
                     case "exit": return;
                     default: System.out.println("Unknown command.");
                 }
+
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
             }
