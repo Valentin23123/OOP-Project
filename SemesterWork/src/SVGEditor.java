@@ -35,6 +35,10 @@ public class SVGEditor {
                     shape = new Line(Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]),
                             Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
                     break;
+                case "square":
+                    shape = new Square(Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]),
+                            Integer.parseInt(tokens[4]), tokens[5]);
+                    break;
             }
             if (shape != null) {
                 shapes.add(shape);

@@ -2,7 +2,7 @@ package shapes;
 
 public class Rectangle extends Shape
 {
-    private int x, y, width, height;
+    protected int x, y, width, height;
 
     public Rectangle(int x, int y, int width, int height, String fill)
     {

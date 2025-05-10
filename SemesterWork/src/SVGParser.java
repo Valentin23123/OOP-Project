@@ -52,7 +52,7 @@ public class SVGParser {
             writer.println("<?xml version=\"1.0\" standalone=\"no\"?>");
             writer.println("<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"");
             writer.println("  \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">");
-            writer.println("<svg>");
+            writer.println("<svg width=\"500\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\">");
             for (Shape shape : shapes) {
                 writer.println("  " + shape.toSVG());
             }
