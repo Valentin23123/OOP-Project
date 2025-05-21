@@ -41,7 +41,6 @@ public class SVGParser {
                             el.getAttribute("stroke")
                     ));
                     break;
-
             }
         }
         return shapes;

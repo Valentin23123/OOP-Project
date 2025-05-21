@@ -1,11 +1,9 @@
 package shapes;
 
-public abstract class Shape
-{
+public abstract class Shape {
     protected String fill;
 
-    public Shape(String fill)
-    {
+    public Shape(String fill) {
         this.fill = fill;
     }
 

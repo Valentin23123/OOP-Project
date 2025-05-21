@@ -77,20 +77,19 @@ public class SVGEditor {
             if (type.equals("rectangle")) {
                 int x = Integer.parseInt(tokens[2]), y = Integer.parseInt(tokens[3]),
                         width = Integer.parseInt(tokens[4]), height = Integer.parseInt(tokens[5]);
-                for (int i = 0; i < shapes.size(); i++) {
-                    if (shapes.get(i).isWithinRectangle(x, y, width, height))
-                        found.add(shapes.get(i));
+                for (Shape s : shapes) {
+                    if (s.isWithinRectangle(x, y, width, height)) found.add(s);
                 }
             } else if (type.equals("circle")) {
                 int cx = Integer.parseInt(tokens[2]), cy = Integer.parseInt(tokens[3]),
                         r = Integer.parseInt(tokens[4]);
-                for (int i = 0; i < shapes.size(); i++) {
-                    if (shapes.get(i).isWithinCircle(cx, cy, r))
-                        found.add(shapes.get(i));
+                for (Shape s : shapes) {
+                    if (s.isWithinCircle(cx, cy, r)) found.add(s);
                 }
             }
-            if (found.isEmpty()) System.out.println("No figures are located within " + type + "...");
-            else {
+            if (found.isEmpty()) {
+                System.out.println("No figures are located within " + type + "...");
+            } else {
                 for (Shape s : found) System.out.println(s.describe());
             }
         } catch (Exception e) {
