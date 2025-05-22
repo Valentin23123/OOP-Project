@@ -1,0 +1,1 @@
+java -Djdk.xml.maxParameterEntitySizeLimit=100000 -jar out/artifacts/SemesterWork_jar/SemesterWork.jar
