@@ -1,7 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+/**
+ * Клас, управляващ командния интерфейс на приложението.
+ * Регистрира всички поддържани команди и препраща изпълнението към SVGEditor.
+ */
 public class Application {
     private final Map<String, Command> commandMap = new HashMap<>();
     private final SVGEditor editor = new SVGEditor();

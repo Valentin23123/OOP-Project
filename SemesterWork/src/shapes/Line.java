@@ -1,5 +1,8 @@
 package shapes;
-
+/**
+ * Клас, представляващ линия между две точки.
+ * Поддържа SVG изход, транслация и проверки за включване.
+ */
 public class Line extends Shape {
     private int x1, y1, x2, y2;
 

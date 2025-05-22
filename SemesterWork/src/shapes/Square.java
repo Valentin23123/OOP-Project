@@ -1,5 +1,8 @@
 package shapes;
-
+/**
+ * Клас, представляващ квадрат.
+ * Наследява Rectangle, но широчината и височината са равни.
+ */
 public class Square extends Rectangle {
 
     public Square(int x, int y, int size, String fill) {

@@ -3,7 +3,10 @@ import java.io.*;
 import java.util.*;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
-
+/**
+ * Клас за четене и запис на SVG файлове.
+ * Използва DOM парсинг за зареждане и създава валиден SVG изход чрез toSVG() на фигурите.
+ */
 public class SVGParser {
     public static List<Shape> load(String filename) throws Exception {
         List<Shape> shapes = new ArrayList<>();

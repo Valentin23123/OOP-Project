@@ -1,5 +1,9 @@
 package shapes;
-
+/**
+ * Клас, представляващ правоъгълник.
+ * Наследява абстрактния клас Shape и предоставя методи за SVG визуализация,
+ * транслация и проверки за включване в други фигури.
+ */
 public class Rectangle extends Shape {
     protected int x, y, width, height;
 

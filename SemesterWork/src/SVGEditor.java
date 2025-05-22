@@ -1,7 +1,10 @@
 import shapes.*;
 import java.util.*;
 import java.io.IOException;
-
+/**
+ * Клас, който управлява логиката за работа с фигури.
+ * Изпълнява командите върху списък от обекти Shape и работи със SVG файлове.
+ */
 public class SVGEditor {
     private List<Shape> shapes = new ArrayList<>();
     private String currentFile = null;
